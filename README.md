@@ -8,16 +8,14 @@ This is a library to use FPGA fabric of FPGA SoC (e.g. Cyclone V SoC) by using d
 How to build
 ------------
 ```sh
-$ mkdir build
-$ cd build
-$ cmake .. -DCMAKE_INSTALL_PREFIX=<Path to install>
-$ make
+$ cmake -S . -B build
+$ cmake --build build
 ```
 
 How to install
 --------------
 ```sh
-$ make install
+$ cmake --install build --prefix <Path to install>
 ```
 
 Requirement

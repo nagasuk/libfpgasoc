@@ -16,11 +16,11 @@ else()
 endif()
 
 set_target_properties(fpgasoc PROPERTIES VERSION "1.0.0" SOVERSION "1")
-target_include_directories(fpgasoc PUBLIC include)
-target_compile_options(fpgasoc PUBLIC -Wall)
-target_compile_features(fpgasoc PUBLIC cxx_std_11)
+target_include_directories(fpgasoc INTERFACE include)
+target_compile_options(fpgasoc PRIVATE -Wall)
+target_compile_features(fpgasoc PRIVATE cxx_std_11)
 
 # [ Installation ]
-install(TARGETS fpgasoc LIBRARY DESTINATION lib)
-install(FILES include/libfpgasoc.h include/libfpgasoc.hpp DESTINATION include)
+install(TARGETS fpgasoc LIBRARY       DESTINATION ${CMAKE_INSTALL_LIBIDR})
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/ DESTINATION include)
 
