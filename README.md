@@ -24,3 +24,7 @@ Requirement
 * make
 * drvfpgasoc
 
+License
+-------
+Please see `LICENSE.md` file for details.
+
