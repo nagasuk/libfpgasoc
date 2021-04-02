@@ -15,7 +15,7 @@ else()
 	add_library(fpgasoc SHARED ${srcs})
 endif()
 
-set_target_properties(fpgasoc PROPERTIES VERSION "1.0.0" SOVERSION "1")
+set_target_properties(fpgasoc PROPERTIES VERSION "1.0.1" SOVERSION "1")
 target_include_directories(fpgasoc INTERFACE include)
 target_compile_options(fpgasoc PRIVATE -Wall)
 target_compile_features(fpgasoc PRIVATE cxx_std_11)
