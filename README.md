@@ -12,6 +12,13 @@ $ cmake -S . -B build
 $ cmake --build build
 ```
 
+If you would like to build it as a SHARED library, please type the following command.
+
+```sh
+$ cmake -S . -B build -DLIBFPGASOC_BUILD_SHARED_LIBS=ON
+$ cmake --build build
+```
+
 How to install
 --------------
 ```sh
